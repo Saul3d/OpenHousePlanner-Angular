@@ -13,8 +13,9 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { HomeComponent } from './home/home.component';
 import { FeatureComponent } from './feature/feature.component';
-import { PropertiesComponent } from './properties/properties.component';
-import { PropertyComponent } from './properties/property/property.component';
+import { RentalsComponent } from './rentals/rentals.component';
+import { RentalPropertiesComponent } from './Rentals/rental-properties/rental-properties.component';
+import { RentalPropertyComponent } from './Rentals/rental-property/rental-property.component';
 
 @NgModule({
   declarations: [
@@ -23,8 +24,9 @@ import { PropertyComponent } from './properties/property/property.component';
     DashboardComponent,
     HomeComponent,
     FeatureComponent,
-    PropertiesComponent,
-    PropertyComponent
+    RentalsComponent,
+    RentalPropertiesComponent,
+    RentalPropertyComponent,
   ],
   imports: [
     BrowserModule,
