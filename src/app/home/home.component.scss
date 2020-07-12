@@ -1,13 +1,17 @@
 @import '../../scss/colors.scss';
 
+button{
+  a{
+    color:$off-white;
+    text-decoration: none;
+  }
+}
 header{
   background-image:url("../../assets/image/banner.jpeg");
   background-size: cover;
   background-position: center center;
   height:550px;
   
-
-
   .headerIntro{
     width: 45.128em;
     section{
@@ -26,7 +30,7 @@ header{
         }
       }
       img.logo{
-        width:28px;
+        width:1.75em;
       }
     } 
     p{
@@ -34,5 +38,38 @@ header{
       font-weight:300;
       margin:0 6.125em 0;
     }  
+  }
+}
+
+// Feature Component Styling
+app-feature{
+  &:nth-child(even){
+    background-color:blue;
+  }
+  section{
+    width:50%;
+    color:$dark-grey;
+    font-weight:300;
+    h2{
+      text-transform: uppercase;
+      font-weight:300;
+      font-size:2.125em
+    }
+  }
+  img{
+    width:100%;
+    padding:0 3.125em 3.125em;
+    box-sizing:border-box;
+  }
+  p{
+    padding:.5em 3.125em 3.125em 0;
+  }
+}
+
+// Media Queries
+
+@media all and (min-width: 1637px){
+  header{
+    height:850px;
   }
 }
