@@ -1,0 +1,38 @@
+@import '../../scss/colors.scss';
+
+header{
+  background-image:url("../../assets/image/banner.jpeg");
+  background-size: cover;
+  background-position: center center;
+  height:550px;
+  
+
+
+  .headerIntro{
+    width: 45.128em;
+    section{
+      display:flex;
+      align-items:center;
+      margin:6.125em 6.125em .5em;
+      a{
+        text-decoration: none;
+        color: $dark-grey;
+        cursor: pointer;
+        margin-right:auto;
+        padding:15px;
+        &.app-name{
+          font-size:2.75em;
+          font-weight:300;
+        }
+      }
+      img.logo{
+        width:28px;
+      }
+    } 
+    p{
+      color:$dark-grey;
+      font-weight:300;
+      margin:0 6.125em 0;
+    }  
+  }
+}

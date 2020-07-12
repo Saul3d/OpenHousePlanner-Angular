@@ -1,4 +1,29 @@
 /* You can add global styles to this file, and also import other style files */
+@import './scss/colors.scss';
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+app-navbar{
+  display:flex;
+  justify-content: flex-end;
+  button{
+    border:none;
+    background:none;
+    outline:none;
+    color: $dark-grey;
+    cursor:pointer;
+  }
+  .drop-down-menu{
+    display: none !important;
+    button{
+      &.mat-menu-item{
+        color:$white !important;
+        text-decoration: none;
+      }
+      &:visited{
+        color:$white;
+      }
+    }
+  }
+}

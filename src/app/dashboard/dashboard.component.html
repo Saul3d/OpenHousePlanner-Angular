@@ -1,1 +1,11 @@
-<p>dashboard works!</p>
+<app-navbar>
+  <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Menu">
+    <mat-icon>more_vert</mat-icon>
+  </button>
+  <mat-menu #menu="matMenu" class='drop-down-menu'>
+    <button mat-menu-item><a href="./home">Home</a></button>
+    <button mat-menu-item><a href="./dashboard">Dashboard</a></button>
+  </mat-menu>
+</app-navbar>
+
+
