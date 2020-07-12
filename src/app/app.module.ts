@@ -12,13 +12,19 @@ import { MatIconModule } from '@angular/material/icon';
 import { NavbarComponent } from './navbar/navbar.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { HomeComponent } from './home/home.component';
+import { FeatureComponent } from './feature/feature.component';
+import { PropertiesComponent } from './properties/properties.component';
+import { PropertyComponent } from './properties/property/property.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     DashboardComponent,
-    HomeComponent
+    HomeComponent,
+    FeatureComponent,
+    PropertiesComponent,
+    PropertyComponent
   ],
   imports: [
     BrowserModule,

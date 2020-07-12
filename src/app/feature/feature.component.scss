@@ -1,0 +1,8 @@
+.wrapper{
+  padding:3.125em;
+  display:flex;
+  justify-content: space-between;
+  &:nth-child(even){
+    background-color:red;
+  }
+}
