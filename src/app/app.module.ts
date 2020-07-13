@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -13,9 +14,8 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { HomeComponent } from './home/home.component';
 import { FeatureComponent } from './feature/feature.component';
-import { RentalsComponent } from './rentals/rentals.component';
-import { RentalPropertiesComponent } from './Rentals/rental-properties/rental-properties.component';
-import { RentalPropertyComponent } from './Rentals/rental-property/rental-property.component';
+import { RentalComponent } from './rental-list/rental/rental.component';
+import { RentalListComponent } from './rental-list/rental-list.component';
 
 @NgModule({
   declarations: [
@@ -24,9 +24,8 @@ import { RentalPropertyComponent } from './Rentals/rental-property/rental-proper
     DashboardComponent,
     HomeComponent,
     FeatureComponent,
-    RentalsComponent,
-    RentalPropertiesComponent,
-    RentalPropertyComponent,
+    RentalComponent,
+    RentalListComponent,
   ],
   imports: [
     BrowserModule,
@@ -34,7 +33,8 @@ import { RentalPropertyComponent } from './Rentals/rental-property/rental-proper
     BrowserAnimationsModule,
     MatToolbarModule,
     MatMenuModule,
-    MatIconModule
+    MatIconModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

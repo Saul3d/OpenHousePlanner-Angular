@@ -4,6 +4,13 @@
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
+button{
+  a{
+    color:$off-white;
+    text-decoration: none;
+  }
+}
+
 app-navbar{
   display:flex;
   justify-content: flex-end;

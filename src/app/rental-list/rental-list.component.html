@@ -1,0 +1,39 @@
+<app-navbar>
+    <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Menu">
+      <mat-icon>more_vert</mat-icon>
+    </button>
+    <mat-menu #menu="matMenu" class='drop-down-menu'>
+      <button mat-menu-item><a href="./home">Home</a></button>
+      <button mat-menu-item><a href="./dashboard">Dashboard</a></button>
+      <button mat-menu-item><a href="./rentalProperty">Rental List</a></button>
+    </mat-menu>
+  </app-navbar>
+
+  <div class="table-responsive" *ngIf="rentals$ | async as rentals">
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Address</th>
+          <th>City</th>
+          <th>State</th>
+          <th>Zip</th>
+          <th>Bedrooms</th>
+          <th>Baths</th>
+          <th>Sqft</th>
+          <th>HasTenants</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let rental of rentals">
+          <td>{{rental.street}}</td>
+          <td>{{rental.city}}</td>
+          <td>{{rental.state}}</td>
+          <td>{{rental.zip}}</td>
+          <td>{{rental.bedrooms}}</td>
+          <td>{{rental.baths}}</td>
+          <td>{{rental.sqft}}</td>
+          <td>{{rental.hasTenants}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
