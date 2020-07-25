@@ -1,6 +1,28 @@
+@import '../../scss/colors.scss';
+
 table{
     thead{
         text-align:left;
     }
     width:100%;
+}
+.view-icon{
+    display:flex;
+    justify-content: flex-start;
+    padding:20px;
+    mat-icon{
+        margin:2px;
+        padding:1px;
+        color:$dark-grey;
+        border-radius:2px;
+        font-size:2em;
+        &:hover{
+            color:$off-white;
+            cursor: pointer;
+        }
+    }
+}
+
+table{
+    margin: 0 20px;
 }

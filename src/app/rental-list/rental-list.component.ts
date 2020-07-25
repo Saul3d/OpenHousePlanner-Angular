@@ -11,10 +11,9 @@ import { Observable } from 'rxjs';
 })
 export class RentalListComponent implements OnInit {
   rentals$: Observable<Rental[]>;
-
-  constructor(private rentalService: RentalService) { }
+  constructor(private RentalService: RentalService) { }
 
   ngOnInit(): void {
-  this.rentals$ = this.rentalService.getRentals();
+  this.rentals$ = this.RentalService.getRentals();
   }
 }

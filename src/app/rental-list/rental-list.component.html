@@ -8,10 +8,15 @@
       <button mat-menu-item><a href="./rentalProperty">Rental List</a></button>
     </mat-menu>
   </app-navbar>
-
+  <!-- <app-data-table-rental></app-data-table-rental> -->
+  <header class="view-icon">
+    <mat-icon>view_module</mat-icon>
+    <mat-icon>view_stream</mat-icon>
+  </header>
+  <app-rental-card></app-rental-card>
   <div class="table-responsive" *ngIf="rentals$ | async as rentals">
-    <table class="table">
-      <thead>
+    <table>  
+    <thead>
         <tr>
           <th>Address</th>
           <th>City</th>

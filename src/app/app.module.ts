@@ -8,6 +8,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatIconModule } from '@angular/material/icon';
+import { MatTableModule } from '@angular/material/table';
 
 
 import { NavbarComponent } from './navbar/navbar.component';
@@ -16,6 +17,10 @@ import { HomeComponent } from './home/home.component';
 import { FeatureComponent } from './feature/feature.component';
 import { RentalComponent } from './rental-list/rental/rental.component';
 import { RentalListComponent } from './rental-list/rental-list.component';
+import { DataTableRentalComponent } from './rental-list/data-table-rental/data-table-rental.component';
+import { MatPaginatorModule } from '@angular/material/paginator';
+import { MatSortModule } from '@angular/material/sort';
+import { RentalCardComponent } from './rental-list/rental-card/rental-card.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +31,8 @@ import { RentalListComponent } from './rental-list/rental-list.component';
     FeatureComponent,
     RentalComponent,
     RentalListComponent,
+    DataTableRentalComponent,
+    RentalCardComponent,
   ],
   imports: [
     BrowserModule,
@@ -34,7 +41,10 @@ import { RentalListComponent } from './rental-list/rental-list.component';
     MatToolbarModule,
     MatMenuModule,
     MatIconModule,
-    HttpClientModule
+    MatTableModule,
+    HttpClientModule,
+    MatPaginatorModule,
+    MatSortModule
   ],
   providers: [],
   bootstrap: [AppComponent]

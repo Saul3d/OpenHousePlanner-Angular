@@ -12,7 +12,7 @@ export class RentalService {
   private rentalUrl = 'http://localhost:50860/api/rentalProperty';
   static getRentals: any;
   
-  constructor( private http: HttpClient ) {}
+  constructor( private http: HttpClient) {}
 
   getRentals(): Observable<Rental[]>{
     return this.http.get<Rental[]>(this.rentalUrl)

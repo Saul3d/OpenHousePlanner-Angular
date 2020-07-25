@@ -1,0 +1,30 @@
+<section class="main-wrapper" *ngIf="rentals$ | async as rentals">
+    <article class="card" *ngFor="let rental of rentals">
+        <div class="hover-overlay">
+            <mat-icon>create</mat-icon>
+            <mat-icon>delete_outline</mat-icon>
+            <mat-icon>launch</mat-icon>
+        </div>
+        <section class="image-wrapper">
+            <img src="{{rental.imgUrl}}" alt="">
+        </section>
+        <section class="rental-info">
+            <article class="left">
+                <span class="address">
+                    {{rental.street}}
+                </span>
+                <span>
+                    {{rental.city}}, {{rental.state}} {{rental.zip}}
+                </span>
+                <span class="house-info"></span>
+            </article>
+            <article class="right">
+                <section>
+                    <span class="bedroom-values">{{rental.bedrooms}}</span>bds | 
+                    <span class="bedroom-values">{{rental.baths}}</span>ba | 
+                    <span class="bedroom-values">{{rental.sqft}}</span>sqft
+                </section>
+            </article>
+        </section>
+    </article>
+</section>
