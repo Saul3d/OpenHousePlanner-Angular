@@ -41,7 +41,7 @@
   [ngClass]="{ showCardSection: showCardSection }"
 ></app-rental-card>
 <div
-  class="table-wrapper mat-elevation-z8"
+  class="table-wrapper"
   [ngClass]="{ showTableSection: showTableSection }"
 >
 <div>
@@ -87,8 +87,6 @@
   <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
 </table>
 <mat-paginator 
-  #paginator 
-  [pageSize]="1"
   [pageSizeOptions]="[5, 10, 20]" 
   showFirstLastButtons>
 </mat-paginator>
