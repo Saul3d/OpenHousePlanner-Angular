@@ -9,6 +9,8 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatIconModule } from '@angular/material/icon';
 import { MatTableModule } from '@angular/material/table';
+import {MatTooltipModule} from '@angular/material/tooltip';
+
 
 
 import { NavbarComponent } from './navbar/navbar.component';
@@ -21,6 +23,8 @@ import { DataTableRentalComponent } from './rental-list/data-table-rental/data-t
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
 import { RentalCardComponent } from './rental-list/rental-card/rental-card.component';
+// import { MatFormField } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
 
 @NgModule({
   declarations: [
@@ -44,7 +48,11 @@ import { RentalCardComponent } from './rental-list/rental-card/rental-card.compo
     MatTableModule,
     HttpClientModule,
     MatPaginatorModule,
-    MatSortModule
+    MatSortModule,
+    MatTooltipModule,
+    // MatFormField,
+    MatInputModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]

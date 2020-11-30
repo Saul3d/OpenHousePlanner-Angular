@@ -1,4 +1,5 @@
 @import '../../scss/colors.scss';
+@import '../../scss/mixins.scss';
 
 table{
     thead{
@@ -22,7 +23,28 @@ table{
         }
     }
 }
+.table-wrapper{
+    padding: 0 20px;
+}
+.showTableSection{
+    display:none;
+}
 
-table{
-    margin: 0 20px;
+.showCardSection{
+    display:none;
+}
+
+.selectedView{
+    @include remove-default-style;
+
+}
+
+.disabledView{
+    @include remove-default-style;
+    opacity:.5;
+}
+
+mat-form-field{
+    background-color:$off-white;
+    margin:5px;
 }
