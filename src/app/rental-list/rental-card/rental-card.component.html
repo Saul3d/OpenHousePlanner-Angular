@@ -1,7 +1,7 @@
-<section class="main-wrapper" *ngIf="rentals$ | async as rentals">
+<section class="main-wrapper card-wrapper" *ngIf="rentals$ | async as rentals">
     <article class="card" *ngFor="let rental of rentals">
         <div class="hover-overlay">
-            <mat-icon>create</mat-icon>
+            <mat-icon (click)="testfunc()">create</mat-icon>
             <mat-icon>delete_outline</mat-icon>
             <mat-icon>launch</mat-icon>
         </div>

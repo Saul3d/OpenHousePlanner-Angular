@@ -3,8 +3,9 @@
 .main-wrapper{
     display:flex;
     flex-wrap:wrap;
-    justify-content: center;
-    width:100%;
+    justify-content: flex-start;
+    width:95%;
+    margin: 0 auto;
 }
 .card{
     position:relative;
@@ -48,18 +49,34 @@
         align-items: center;
         display:none;
         mat-icon{
-             font-size:auto;
+             font-size:28px;
             color:$white;
-            padding:12px;
+            padding:15px;
             border:1px solid rgba(255, 255, 255, .4);
             border-radius:50%;
             background-color: rgba(255, 255, 255, .4);
             margin:0 18px;
+            display:flex;
+            justify-content: center;
+            align-items: center;
             &:hover{
                 background-color:orange;
-                color: rgba(255, 255, 255, .6);
+                color: $white;
                 cursor: pointer;
             }
         }
     }
+    &:hover{
+        .hover-overlay{
+            display:flex;
+        }
+    }
+}
+
+.showSection{
+    display:block;
+}
+
+table, .table-wrapper{
+    margin:0 !important;
 }
